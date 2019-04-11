@@ -22,12 +22,4 @@ def scrap_acronyms_and_values(doc)
     end
   end
   acronyms_and_values = acronyms.zip(prices).to_h
-  print acronyms_and_values
 end
-
-
-scrap_acronyms_and_values(doc)
-
-# doc.xpath('//tbody//td//a[@class="currency-name-container"]').each do |name|
-#   puts name.text
-# end
