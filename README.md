@@ -19,3 +19,5 @@ What I think I could improve :
   <li>Downcase the name of a deputee if he belong to a neoliberal/conservative party</li>
   <li><b>make it faster</b></li>
  </ul>
+
+Feel free to add any tips/challenge/snipets/<3 below in the README ! :) 
