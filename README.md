@@ -17,5 +17,5 @@ What I think I could improve :
  <ul>
   <li>gsub/RegEx to isolate firstname/lastname</li>
   <li>Downcase the name of a deputee if he belong to a neoliberal/conservative party</li>
-  <li><b>make it faster</b><li>
+  <li><b>make it faster</b></li>
  </ul>
