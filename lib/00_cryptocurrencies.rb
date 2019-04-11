@@ -2,10 +2,11 @@ require 'nokogiri'
 require 'open-uri'
 require 'pry'
 
-doc_crypto = Nokogiri::HTML(open("https://coinmarketcap.com/"))
 
-def scrap_acronyms_and_values(doc)
-  
+
+def scrap_acronyms_and_values
+  doc = Nokogiri::HTML(open("https://coinmarketcap.com/all/views/all/"))
+  a = 'aze'
   acronyms = [] # > Will contain all cryptocurrencies acronyms (e.g BTC)
   prices = []   # > Will contain all cryptocurrencies prices (e.g 9000.01)
 
@@ -21,6 +22,9 @@ def scrap_acronyms_and_values(doc)
       prices << currency_price.text # And store it in the related array
     end
   end
+  puts acronyms.zip(prices).to_h
   acronyms_and_values = acronyms.zip(prices).to_h # Merge both array (.zip > [[BTC, 5000], [ETH, 160], ...])
                                                   # and transform it into a hash (.to_h > {"BTC => "6000", "ETH" => "160", ...})
 end
+
+acronyms_and_values = scrap_acronyms_and_values
